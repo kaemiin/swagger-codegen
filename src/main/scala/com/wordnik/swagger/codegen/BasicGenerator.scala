@@ -195,7 +195,7 @@ abstract class BasicGenerator extends CodegenConfig with PathUtil {
       }
       case _ => {
         apiKey.map{ key =>
-          Some(ApiKeyValue("api_key", "query", key))
+          Some(ApiKeyValue("SESSIONID", "query", key))
         }.getOrElse(None)
       }
     }
